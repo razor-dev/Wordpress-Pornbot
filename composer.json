@@ -1,0 +1,25 @@
+{
+  "name": "razor/adult-video-poster",
+  "description": "Wordpress adult video poster",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0",
+  "type": "project",
+  "authors": [
+    {
+      "name": "RaZoR",
+      "email": "support@razor-dev.com"
+    }
+  ],
+  "require": {
+    "simple-html-dom/simple-html-dom": "*"
+  },
+  "autoload": {
+      "psr-4": {"inc\\":"./inc"}
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Youpie/simple-html-dom"
+    }
+  ]
+}
