@@ -1,6 +1,6 @@
 <?php
 /*
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  */
 
 namespace inc\Api\Callbacks;

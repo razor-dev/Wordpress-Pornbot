@@ -20,6 +20,7 @@ final class init
             Base\Settings::class,
             Base\Validator::class,
             Base\Curl::class,
+            Base\VideoManager::class
         ];
     }
 
