@@ -1,6 +1,6 @@
 <?php
 /*
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  */
 
 namespace inc\Base;
@@ -17,7 +17,7 @@ class BaseController
     {
         $this->plugin_path = plugin_dir_path($this->dirname_r(__FILE__, 2));
         $this->plugin_url = plugin_dir_url($this->dirname_r(__FILE__, 2));
-        $this->plugin = plugin_basename($this->dirname_r(__FILE__, 3)).'/razor-adult-video-poster.php';
+        $this->plugin = plugin_basename($this->dirname_r(__FILE__, 3)).'/wordpress-pornbot.php';
 
         $this->main_settings = array(
             'rza_player_width' => array('Width:', 'rza_player_settings_dimension', 'text'),
@@ -34,9 +34,6 @@ class BaseController
 
         $this->managers = array(
             'xVideos' => 'xVideos Module',
-            'PornHub' => 'PornHub Module',
-            'xHamster' => 'xHamster Module',
-            'FC2' => 'FC2 Module',
         );
     }
 
@@ -49,7 +46,7 @@ class BaseController
 
     public function activated($key)
     {
-        $option = get_option('rza_plugin_managers');
+        $option = get_option('rza_plugin_pornbot_managers');
         return isset($option[$key]) ? $option[$key]  : false;
     }
 }

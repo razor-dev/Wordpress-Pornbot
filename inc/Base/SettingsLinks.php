@@ -15,7 +15,7 @@ class SettingsLinks extends BaseController
 
     public function settings_link($links)
     {
-        $settings_link = '<a href="admin.php?page=rza_settings">Settings</a>';
+        $settings_link = '<a href="admin.php?page=rza_pornbot_settings">Settings</a>';
         array_push($links, $settings_link);
         return $links;
     }

@@ -45,11 +45,11 @@ class Settings extends BaseController
     {
         $this->subpages = array(
             array(
-                'parent_slug'=> 'rza_plugin',
+                'parent_slug'=> 'rza_pornbot_plugin',
                 'page_title'=> 'Adult Video Settings',
                 'menu_title'=> 'Settings',
                 'capability'=> 'manage_options',
-                'menu_slug'=> 'rza_settings',
+                'menu_slug'=> 'rza_pornbot_settings',
                 'callback'=> array($this->callbacks, 'settingsPage')
             )
         );
@@ -60,13 +60,13 @@ class Settings extends BaseController
 
         $args = array(
             array(
-                'option_group' => 'rza_options_group',
-                'option_name' => 'rza_plugin_settings',
+                'option_group' => 'rza_pornbot_options_group',
+                'option_name' => 'rza_pornbot_plugin_settings',
                 'callback' => array($this->callbacks, 'rzaCustomSettings')
             ),
             array(
-                'option_group' => 'rza_managers_settings',
-                'option_name' => 'rza_plugin_managers',
+                'option_group' => 'rza_pornbot_managers_settings',
+                'option_name' => 'rza_pornbot_plugin_managers',
                 'callback' => array($this->callbacks_mngr, 'checkboxSanitize')
             )
         );
@@ -77,7 +77,7 @@ class Settings extends BaseController
     {
         $args = array(
             array(
-                'id' => 'rza_managers_settings_section',
+                'id' => 'rza_pornbot_managers_settings_section',
                 'title' => 'Adult Video Manager Settings',
                 'callback' => array($this->callbacks_mngr, 'adminSectionManager'),
                 'page' => 'rza_settings_managers'
@@ -86,25 +86,25 @@ class Settings extends BaseController
                 'id' => 'rza_player_settings_dimension',
                 'title' => 'Player dimension setting',
                 'callback' => array($this->callbacks, 'rzaAdminSection'),
-                'page' => 'rza_settings'
+                'page' => 'rza_pornbot_settings'
             ),
             array(
                 'id' => 'rza_player_settings_custom_fields',
                 'title' => 'Name of custom fields:',
                 'callback' => array($this->callbacks, 'rzaAdminSection'),
-                'page' => 'rza_settings'
+                'page' => 'rza_pornbot_settings'
             ),
             array(
                 'id' => 'rza_player_settings_get_thumbnail',
                 'title' => 'Download thumbnail to the server?',
                 'callback' => array($this->callbacks, 'rzaAdminSection'),
-                'page' => 'rza_settings'
+                'page' => 'rza_pornbot_settings'
             ),
             array(
                 'id' => 'rza_post_template_setting',
                 'title' => 'Post Template setting',
                 'callback' => array($this->callbacks, 'rzaAdminSection'),
-                'page' => 'rza_settings'
+                'page' => 'rza_pornbot_settings'
             ),
         );
 
@@ -121,10 +121,10 @@ class Settings extends BaseController
                 'id' => $key,
                 'title' => $value[0],
                 'callback' => array($this->callbacks_mngr, 'FieldGen'),
-                'page' => 'rza_settings',
+                'page' => 'rza_pornbot_settings',
                 'section' => $value[1],
                 'args' => array(
-                    'option_name' => 'rza_plugin_settings',
+                    'option_name' => 'rza_pornbot_plugin_settings',
                     'label_for' => $key,
                     'type'      => $value[2],
                     'class' => isset($value[3]) ? $value[3] : '',
@@ -138,10 +138,10 @@ class Settings extends BaseController
                 'id' => $key,
                 'title' => $value,
                 'callback' => array($this->callbacks_mngr, 'FieldGen'),
-                'page' => 'rza_settings_managers',
+                'page' => 'rza_pornbot_settings_managers',
                 'section' => 'rza_managers_settings_section',
                 'args' => array(
-                    'option_name' => 'rza_plugin_managers',
+                    'option_name' => 'rza_pornbot_plugin_managers',
                     'label_for' => $key,
                     'type'      => 'checkbox',
                     'class' => 'ui-toggle',

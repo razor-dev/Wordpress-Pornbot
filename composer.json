@@ -1,6 +1,6 @@
 {
-  "name": "razor/adult-video-poster",
-  "description": "Wordpress adult video poster",
+  "name": "razor/rza-pornbot",
+  "description": "Wordpress PornBot - Adult Video Multi Poster",
   "minimum-stability": "stable",
   "license": "GPL-2.0",
   "type": "project",

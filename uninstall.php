@@ -2,7 +2,7 @@
 /*
  * Trigger this file on Plugin uninstall
  *
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  */
 
 

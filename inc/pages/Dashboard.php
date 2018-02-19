@@ -1,6 +1,6 @@
 <?php
 /*
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  */
 namespace inc\pages;
 use \inc\Base\BaseController;
@@ -29,10 +29,10 @@ class Dashboard extends BaseController
     {
         $this->pages = array(
             array(
-                'page_title'=> 'RaZoR Adult Video Plugin',
-                'menu_title'=> 'Adult Video',
+                'page_title'=> 'Wordpress PornBot - Adult video multi-poster',
+                'menu_title'=> 'PornBot',
                 'capability'=> 'manage_options',
-                'menu_slug'=> 'rza_plugin',
+                'menu_slug'=> 'rza_pornbot_plugin',
                 'callback'=> array($this->callbacks, 'adminDashboard'),
                 'icon_url'=> 'dashicons-format-video',
                 'position'=> 110

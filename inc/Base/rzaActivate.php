@@ -37,12 +37,12 @@ class rzaActivate{
         }
         $default_managers = array();
         $default_settings = array();
-        if (!get_option('rza_plugin_managers')){
-            update_option('rza_plugin_managers', $default_managers);
+        if (!get_option('rza_pornbot_plugin_managers')){
+            update_option('rza_pornbot_plugin_managers', $default_managers);
         }
 
-        if (!get_option('rza_plugin_settings')){
-            update_option('rza_plugin_settings', $default_settings);
+        if (!get_option('rza_pornbot_plugin_settings')){
+            update_option('rza_pornbot_plugin_settings', $default_settings);
         }
 
     }

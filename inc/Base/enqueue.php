@@ -1,9 +1,9 @@
 <?php
 /*
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  */
 namespace inc\Base;
-use \inc\Base\BaseController;
+
 class enqueue extends BaseController
 {
 
@@ -14,7 +14,7 @@ class enqueue extends BaseController
 
     public function Enqueue()
     {
-        wp_enqueue_style('RzaPluginStyle', $this->plugin_url.'assets/rza-style.css');
-        wp_enqueue_script('RzaPluginStyle', $this->plugin_url.'assets/rza-script.js');
+        wp_enqueue_style('RzaPluginStyle', $this->plugin_url.'assets/rza-pornbot-style.css');
+        wp_enqueue_script('RzaPluginStyle', $this->plugin_url.'assets/rza-pornbot-script.js');
     }
 }

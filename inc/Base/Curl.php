@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  * User: razor
  * Date: 2/6/2018
  * Time: 8:58 PM

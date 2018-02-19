@@ -34,7 +34,7 @@ var styleSRC     = './src/scss/rza-style.scss';
 var styleURL     = './assets/';
 var mapURL       = './';
 
-var jsSRC        = './src/js/rza-script.js';
+var jsSRC        = './src/js/rza-pornbot-script.js';
 var jsURL        = './assets/';
 
 var styleWatch   = './src/scss/**/*.scss';
@@ -74,7 +74,7 @@ gulp.task( 'js', function() {
     })
         .transform( babelify, { presets: [ 'env' ] } )
         .bundle()
-        .pipe( source( 'rza-script.js' ) )
+        .pipe( source( 'rza-pornbot-script.js' ) )
         .pipe( buffer() )
         .pipe( gulpif( options.has( 'production' ), stripDebug() ) )
         .pipe( sourcemaps.init({ loadMaps: true }) )

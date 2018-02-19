@@ -1,6 +1,6 @@
 <?php
 /*
- * @package RzaPlugin
+ * @package RzaPornBotPlugin
  */
 
 namespace inc;
@@ -20,7 +20,6 @@ final class init
             Base\Settings::class,
             Base\Validator::class,
             Base\Curl::class,
-            Base\xVideos::class,
         ];
     }
 
